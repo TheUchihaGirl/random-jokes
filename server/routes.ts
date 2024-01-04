@@ -1,5 +1,5 @@
 import { publicProcedure, router } from "./server";
-import z from 'zod';
+import * as z from 'zod';
 
 
 let jokes = [
@@ -31,3 +31,5 @@ export const jokeRoutes = router({
             return jokes;
         })   
 });
+
+export type JokeRouterType = typeof jokeRoutes;

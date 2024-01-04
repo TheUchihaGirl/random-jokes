@@ -10,4 +10,4 @@ app.use('/trpc',trpcExpress.createExpressMiddleware({
     router : jokeRoutes
 }));
 
-app.listen(3000);
+app.listen(4001);
